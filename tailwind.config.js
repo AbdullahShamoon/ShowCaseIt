@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'meow': ['"Meow Script"', 'cursive'],
+      'sixtyfour': ['"Sixtyfour"', 'cursive'],
+      'miltonian': ['"Miltonian Tattoo"', 'cursive'],
+    }
   },
   plugins: [],
 }

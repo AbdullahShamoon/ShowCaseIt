@@ -52,7 +52,7 @@ const App = () => {
 
   return (
     <>
-      <div className='w-full bg-[#4d4848]'>
+      <div className='w-full bg-[#2c2c2c]'>
         <div class="grid grid-cols-8 gap-2 overflow-hidden">
 
           <div class="grid grid-cols-subgrid gap-2 col-span-5">
@@ -98,11 +98,11 @@ const App = () => {
         </div>
       </div>
       <div className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white gap-2">
-        <h1 className='text-5xl font-bold'>ABDULLAH SHAMOON<sup>®</sup></h1>
-        <h2 className='text-3xl font-bold'>MERN developer</h2>
+        <h1 className='text-5xl font-bold font-sixtyfour'>ABDULLAH SHAMOON<sup>®</sup></h1>
+        <h2 className='text-3xl font-bold font-meow'>M E R N - developer</h2>
       </div>
       <div className='relative w-full h-screen bg-[#cfcfcf] flex items-center justify-center py-96 z-20 text-center'>
-        <p className='w-3/4 text-3xl '>
+        <p className='w-3/4 text-3xl font-miltonian'>
           I am a passionate web developer with a keen interest in building dynamic and responsive user interfaces. With expertise in modern web technologies like React, I strive to create seamless and engaging web experiences. My attention to detail and dedication to clean, efficient code help me deliver high-quality solutions tailored to client needs. Whether it's front-end development or full-stack projects, I am committed to continuous learning and adapting to the ever-evolving landscape of web development.
 
         </p>
