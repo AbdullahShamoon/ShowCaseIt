@@ -48,7 +48,46 @@ const App = () => {
       })
 
     })
+
+    document.querySelectorAll(".card").forEach((card) => {
+      let image = card.querySelector("img");
+      gsap.to(card, {
+        scale: 0.7,
+        ease: "none",
+        opacity: 0,
+        scrollTrigger: {
+          trigger: card,
+          start: "top 15%",
+          end: "bottom 15%",
+          scrub: true
+        }
+      })
+    })
+
   })
+
+  const images = [
+    './images/image1.jpg',
+    './images/image2.jpg',
+    './images/image3.jpg',
+    './images/image4.jpg',
+    './images/image5.jpg',
+    './images/image6.jpg',
+    './images/image7.jpg',
+    './images/image8.jpg',
+    './images/image9.jpg',
+    './images/image10.jpg',
+    './images/image11.jpg',
+    './images/image12.jpg',
+    './images/image13.jpg',
+    './images/image14.jpg',
+    './images/image15.jpg',
+    './images/image16.jpg',
+    './images/image17.jpg',
+    './images/image18.jpg',
+    './images/image19.jpg',
+    './images/image20.jpg'
+  ]
 
   return (
     <>
@@ -108,89 +147,16 @@ const App = () => {
         </p>
       </div>
 
-      <div className="cards w-full bg-[#2c2c2c] relative flex flex-col gap-7 justify-center items-center pt-[12vh]">
+      <div className="cards w-full bg-[#2c2c2c] relative flex flex-col gap-7 justify-center items-center py-[12vh]">
 
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image1.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image2.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image3.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image4.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image5.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image6.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image7.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image8.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image9.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image10.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image11.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image12.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image13.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image14.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image15.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image16.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image17.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image18.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image19.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-        <div className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
-          <img className='object-cover w-full h-full rounded-2xl' src="./images/image20.jpg" alt="" />
-          <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
-        </div>
-
+        {
+          images.map((image, index) => {
+            return <div key={index} className="card w-1/4 h-[75vh] mx-auto sticky top-[12vh]">
+              <img className='object-cover w-full h-full rounded-2xl' src={image} alt="" />
+              <div className="text-white absolute bottom-0 bg-gradient-to-t from-black  p-5 pb-10 rounded-2xl flex flex-col items-center gap-5 text-2xl font-bold ">PROJECT NAME<br /><span className='text-sm font-normal'>Project description will be shown here when added , Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, facere.</span> </div>
+            </div>
+          })
+        }
       </div>
     </>
   )
