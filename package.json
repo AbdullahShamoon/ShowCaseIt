@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AbdullahShamoon.github.io/ShowCaseIt",
+  "homepage": "https://abdullahshamoon.github.io/ShowCaseIt",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
